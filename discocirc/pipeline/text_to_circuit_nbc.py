@@ -43,7 +43,7 @@ def noun_sort(circ):
 
 
 """def sentence_list_to_circuit(context, simplify_swaps=True, wire_order='intro_order', spacy_model=spacy_model, add_indices_to_types=True, frame_expansion=True, doc=None):
-    """
+    
     Parameters:
     -----------
     context : list
@@ -58,7 +58,7 @@ def noun_sort(circ):
     Returns:
     --------
     context_circ : discopy.rigid.Diagram
-    """
+    
     sentence_circuits = []
     for sentence in context:
         sentence_diag = sentence2circ(parser,
@@ -82,11 +82,11 @@ def noun_sort(circ):
     return context_circ
 
 def text_to_circuit(text, **kwargs):
-    """
+    
     input a given text as a string
 
     return the corresponding (discopy) circuit for that text
-    """
+    
     doc = spacy_model(text)
     sentences = []
     for sent in doc.sents:
